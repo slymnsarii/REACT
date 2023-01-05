@@ -13,7 +13,8 @@ const App = () => {
 
 {/* JSX comment böyle yapılır ctrl+shift+A */}
 
-<Jsx1/>
+
+
 
       {/* <HelloWorld/>
       <Jsx1/>
@@ -21,7 +22,8 @@ const App = () => {
       <Jsx3/>
       <Jsx4/>
       */}
-      <Jsx5/>
+       <Jsx5/>
+      
       
       
 
