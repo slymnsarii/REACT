@@ -13,6 +13,7 @@ const App = () => {
 
 {/* JSX comment böyle yapılır ctrl+shift+A */}
 
+<Jsx1/>
 
       {/* <HelloWorld/>
       <Jsx1/>
