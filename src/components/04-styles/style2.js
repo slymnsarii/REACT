@@ -15,7 +15,7 @@ const Style2 = () => {
       <h2 style={styleTitle}>JSX Loops</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga corporis
-        molestias suscipit quidem culpa, consectetur nihil possimus quasi
+        sad molestias suscipit quidem culpa, consectetur nihil possimus quasi
         perferendis, ipsam repellendus aliquam accusamus porro doloribus? Quas
         tempore eligendi sapiente expedita.
       </p>
