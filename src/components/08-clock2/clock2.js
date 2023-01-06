@@ -1,13 +1,20 @@
 import moment from "moment/moment"; //npm install moment kur (momentjs.com)
 import React from "react";
-import "./clock1.scss";
-const Clock1 = () => {
+import "./clock2.scss";
+
+const Clock2 = (props) => {
   const dateTime = moment();
   //require('moment/locale/tr');
+
+  console.log(props);
+
+  const { textColor, bgColor } = props;
+
   const timeStr = dateTime.format("HH:mm");
   const dateStr = dateTime.format("LL");
   const dayStr = dateTime.format("dddd");
   const hour = dateTime.format("HH");
+
   let message = "";
   if (hour >= 6 && hour < 11) {
     message = "Morning";
@@ -20,8 +27,14 @@ const Clock1 = () => {
   } else {
     message = "Night";
   }
+
+  const clockStyle = {
+    backgroundColor: bgColor,
+    color: textColor,
+  };
+
   return (
-    <div className="clock-container">
+    <div className="clock-container" style={clockStyle}>
       <div className="time">{timeStr}</div>
       <div>
         <div className="date">{dateStr}</div>
@@ -32,4 +45,5 @@ const Clock1 = () => {
     </div>
   );
 };
-export default Clock1;
+
+export default Clock2;
