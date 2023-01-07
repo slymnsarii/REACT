@@ -3,6 +3,7 @@ import ProductCard from "./product-card";
 const Products = () => {
   return (
     <div>
+      {/* ProductCard'a  <ProductCard> arasındakileri </ProductCard>  gönderiyoruz*/}
       <ProductCard name="Ali">
         <h2>Sony Display</h2>
         <p>

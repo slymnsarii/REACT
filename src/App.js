@@ -34,9 +34,10 @@ const App = () => {
       <Clock1 />
       <Greetings />
       <Products />
+      <Clock2 textColor="blue" bgColor="yellow" />
       */}
 
-      <Clock2 textColor="blue" bgColor="yellow" />
+      <Products />
     </div>
   );
 };
