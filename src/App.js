@@ -13,6 +13,9 @@ import Clock1 from "./components/05-clock1/clock1";
 import Greetings from "./components/06-props-1/greetings";
 import Products from "./components/07-props-2/products";
 import Clock2 from "./components/08-clock2/clock2";
+import Gallery from "./components/09-image/gallery";
+import Image from "./components/09-image/image";
+import ProfileCard from "./components/10-profile-card/profile-card";
 //bir component'in import olması için import olacak dosyanın açık olması lazım, burda Jsx1 açık olmalı mesela
 
 const App = () => {
@@ -35,9 +38,18 @@ const App = () => {
       <Greetings />
       <Products />
       <Clock2 textColor="blue" bgColor="yellow" />
+      <Image />
+      <Gallery />
       */}
 
-      <Products />
+      <ProfileCard
+        avatar="profile.jpg"
+        name="Ali Gel"
+        location="Turkey, Istanbul"
+        shot="3"
+        followers="23432"
+        following="234"
+      />
     </div>
   );
 };

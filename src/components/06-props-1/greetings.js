@@ -8,7 +8,6 @@ const Greetings = () => {
       <h1>Greetings Component</h1>
       <Welcome firstName="Ali" lastName="Gel" />
       <Welcome firstName="Ayşe" lastName="Gel" />
-      <Welcome lastName="Gel" dsds="sad" />
     </div>
   );
 };

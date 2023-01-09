@@ -4,7 +4,7 @@ const Products = () => {
   return (
     <div>
       {/* ProductCard'a  <ProductCard> arasındakileri </ProductCard>  gönderiyoruz*/}
-      <ProductCard name="Ali">
+      <ProductCard name="Alis">
         <h2>Sony Display</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic beatae
