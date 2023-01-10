@@ -14,6 +14,9 @@ const Jsx5 = () => {
       </ul>
 
       <select>
+        <option value="" disabled selected>
+          Lütfen ilinizi seçin
+        </option>
         {cities.map((city, index) => (
           <option key={index}>{city}</option>
         ))}

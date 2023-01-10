@@ -16,6 +16,12 @@ import Clock2 from "./components/08-clock2/clock2";
 import Gallery from "./components/09-image/gallery";
 import Image from "./components/09-image/image";
 import ProfileCard from "./components/10-profile-card/profile-card";
+import BootstrapDynamic from "./components/11-bootstrap/bootstrap-dynamic";
+import BootstrapStatic from "./components/11-bootstrap/bootstrap-static";
+import Icon from "./components/12-icons/icon";
+import Events from "./components/13-events/events";
+import Shop from "./components/14-products/shop";
+
 //bir component'in import olması için import olacak dosyanın açık olması lazım, burda Jsx1 açık olmalı mesela
 
 const App = () => {
@@ -40,8 +46,6 @@ const App = () => {
       <Clock2 textColor="blue" bgColor="yellow" />
       <Image />
       <Gallery />
-      */}
-
       <ProfileCard
         avatar="profile.jpg"
         name="Ali Gel"
@@ -49,7 +53,21 @@ const App = () => {
         shot="3"
         followers="23432"
         following="234"
+        <ProfileCard
+        avatar="profile.jpg"
+        name="Ali Gel"
+        location="Turkey, Istanbul"
+        shot="3"
+        followers="23432"
+        following="234"
       />
+      <BootstrapStatic />
+      <BootstrapDynamic />
+      <Icon />
+      <Events />
+      */}
+
+      <Shop />
     </div>
   );
 };

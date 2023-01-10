@@ -11,3 +11,8 @@ const Stat = ({ name, value }) => {
 };
 
 export default Stat;
+
+/* 
+Shot:name, 1:value / followers:name, 2:value / foolowing:name, 10:value
+bu component'i profile-card componentine import ediyoruz
+*/

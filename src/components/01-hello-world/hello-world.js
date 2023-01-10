@@ -1,11 +1,7 @@
-import HelloReact from "../02-hello-react/hello-react";
+import React from "react";
 
-
-const HelloWorld = ()=> {
-    return(
-       <h1>Hello world</h1>
-       
-    )
-}
+const HelloWorld = () => {
+  return <div>HelloWorld</div>;
+};
 
 export default HelloWorld;
