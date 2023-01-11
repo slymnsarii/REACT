@@ -3,7 +3,7 @@ import React from "react";
 const BootstrapStatic = () => {
   return (
     <div>
-      <nav classNameName="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             Navbar
