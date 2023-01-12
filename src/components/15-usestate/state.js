@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 const State = () => {
+  /* ilk değer:light bu mode'a atanıyor */
   const [mode, setMode] = useState("light");
 
   let classNames = "bg-light text-dark p-5";
@@ -21,9 +22,9 @@ const State = () => {
 };
 export default State;
 
-/* setMode("dark") çalıştığı anda, mode defaultu light olandan dark'a geçiyor ve  6.satırdan itibaren aşağı kadar 
+/* setMode("dark") çalıştığı anda, mode defaultu light olandan dark'a geçiyor(setMode, mode'a atanıyor) ve  6.satırdan itibaren aşağı kadar yani aslında JSX(return içi) kısmının yeniden çalışması
 dom yeniden re-render(ilk çalıştığında hepsi çalışıyor bu render oluyor) ediliyor ve component güncelleniyor, bu güncellemeyi state yapıyor
 
-Kaç tane state olursa olsun birbirini etkilemez state'ler korunur
-Set mode'u çalıştırdığımızda asenkron oluyor
+Kaç tane state olursa olsun birbirini etkilemez state'ler korunur ve biri re-render oluyorsa diğeri olmaz
+Set mode'u çalıştırdığımızda asenkron oluyor, asenkron:bagimsiz,ayri thread'te calisir, islemci onlar icin ayri thread belirleyip orda calisirlar
  */

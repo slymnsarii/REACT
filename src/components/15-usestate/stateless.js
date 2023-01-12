@@ -10,7 +10,7 @@ const Stateless = () => {
     } else {
       classNames = "bg-light text-dark p-5";
     }
-    document.getElementById("switcher").setAttribute("class", classNames);
+    document.getElementById("switcher").setAttribute("class", classNames); //normalde burda class yeine className olmalıydı ama aşağıdaki kodlar dom edilirken html'ye cevrildigi icin "class" yaptık
     console.log(mode);
     console.log(classNames);
   };
