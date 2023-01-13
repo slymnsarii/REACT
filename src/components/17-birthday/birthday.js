@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import data from "./people.json";
-import PersonCard from "./preson-card";
+import PersonCard from "./person-card";
 
 const Birthday = () => {
   const [people, setPeople] = useState(data);
@@ -19,7 +19,7 @@ const Birthday = () => {
       {/* burda data.length yapmayız çünkü useState'de data'yı people'a atadım */}
       {people.map((item) => (
         <PersonCard /* her dönüşte bir PersonCard oluşturuyoruz */
-          {...item} /* people'ı dönerken json'daki bütün elemanların hepsini ayrı ayrı PersonCard'a ayrı ayrı gönderme işi yapıyor, prop göndermenin kısayolu */
+          {...item} /* people'ı dönerken json'daki bütün elemanların hepsini ayrı ayrı PersonCard'a ayrı ayrı prop gönderme işi yapıyor, prop göndermenin kısayolu */
           key={item.id}
           deletePersonProp={deletePerson}
         /> /* key={item.id} koymasak da çalışır ama console'da hata verir, neden peki item.id yazdı key içine? */

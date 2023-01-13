@@ -5,6 +5,7 @@ const Clock3 = (props) => {
   const [dateTime, setDateTime] = useState(moment());
   //require('moment/locale/tr');
   const { textColor, bgColor } = props;
+
   const timeStr = dateTime.format("HH:mm");
   const dateStr = dateTime.format("LL");
   const dayStr = dateTime.format("dddd");
@@ -32,6 +33,19 @@ const Clock3 = (props) => {
     color: textColor,
   };
 
+  /* 
+  saniyede 1 güncellenecek kodların tamamı bunu yazarsak ama bu sürekli çalışır saniyede, 1 saniye geçince setDateTime çalışır 
+  moment güncellenir, state değişti, re-render oldu sonra buraya tekrar gelip her saniyede state'ı günceller ve 
+  katlanarak(hem bi önceki hem şimdiki çalışır (1,2,4,8,16,32,64....)) her renderda chrome'daki DOM'u patlatacak duruma gelir
+  
+  setInterval(() => {
+      setDateTime(moment());
+    }, 1000);
+  
+  */
+
+  /* Burda da her saniye çalışacak ama bi öncekini çaılıştırmayacak bir sistem lazım bunu da useEffect ile sağlarız 
+    clearInterval ile UNMOUNTING kullanarak, sayfadan tamamen çıkınca clearInterval devreye girer*/
   useEffect(() => {
     const timer = setInterval(() => {
       setDateTime(moment());

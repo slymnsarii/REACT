@@ -79,9 +79,9 @@ const App = () => {
       <UseEffect1 />
       <Clock3 />
       <UseEffect2 />
-      */}
-
       <CountryFilter />
+      */}
+      <UseEffect1 />
     </div>
   );
 };

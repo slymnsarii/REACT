@@ -5,6 +5,7 @@ const UseEffect2 = () => {
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
+    /* burda prop'u(counter) takip eden o değiştiği zaman title'lı değişen kod yazdık */
     document.title = `Hello ${counter}`;
   }, [counter]);
 
