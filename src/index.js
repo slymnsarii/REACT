@@ -6,11 +6,7 @@ import "bootstrap/scss/bootstrap.scss";
 //import "bootstrap"; Bu import eğer bootstrap static olarak kullanılacaksa JS'i etkinleştirmek için kullanılmalıdır, dinamik yapıda buna grek yoktur
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
