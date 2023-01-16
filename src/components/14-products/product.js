@@ -7,7 +7,7 @@ const Product = (props) => {
   const newTitle = title.toUpperCase();
 
   const addToCart = () => {
-    alert(`${title} added to cart`);
+    alert(`${title} added to card`);
   };
 
   return (
