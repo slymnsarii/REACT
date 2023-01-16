@@ -8,6 +8,13 @@ const UseRef = () => {
   //bir kullanıcı hareketi olsun ondan sonra bir şeyler gelsin istersek useRef
   //sanal DOM aracılığıyla DOM'u değiştirmek için kullanılan yapı
   const setFocus = () => {
+    /*  const val = "Example@example.com"
+
+    const setFocus = () => {
+        const txtEmail = document.getElementById("txtEmail");
+        txtEmail.focus();  react diyorki dom dan boyle secip getirme problem olabilir . asagiya ref methodu ekleyerek
+    } */
+
     console.log(emailRef);
     console.log(btnRef);
     emailRef.current.focus();

@@ -20,7 +20,7 @@ const CountryFilter = () => {
         type="text"
         placeholder="Type something..."
         className="mb-3"
-        onChange={(e) =>
+        onChange={(e /* form içine girilen değerleri almak için */) =>
           setSearchText(e.target.value)
         } /* form içinde değişklik olursa gir setSearchText'i değiştir demek için */
       />
@@ -34,7 +34,7 @@ const CountryFilter = () => {
           </tr>
         </thead>
         <tbody>
-          {countries.map((item, index /*  */) => (
+          {countries.map((item, index) => (
             <tr key={item.code}>
               {" "}
               {/*key olarak metin index'ini buraya baglamak performans açısından iyi olmuyor, index degişken oldugu için sürekli her numara değiştiğinde re-render olur ama item.code yaparsak her ülkenin key'i aynı olur değişmez */}

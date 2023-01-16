@@ -34,6 +34,8 @@ import CountryFilter from "./components/20-country-filter/contry-filter";
 import Scroll from "./components/21-useref/scroll";
 import UseRef from "./components/21-useref/useref";
 import ClassComp from "./components/22-class-type-component/class-comp";
+import UserCards from "./components/23-fetch-users/user-cards";
+import Countries from "./components/24-axios-countries/countries";
 
 //bir component'in import olması için import olacak dosyanın açık olması lazım, burda Jsx1 açık olmalı mesela
 
@@ -85,8 +87,10 @@ const App = () => {
       <CountryFilter />
       <UseRef />
       <Scroll />
-      */}
       <ClassComp />
+      <UserCards />
+      */}
+      <Countries />
     </div>
   );
 };
