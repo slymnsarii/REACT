@@ -16,12 +16,12 @@ const Form2 = () => {
       <Form>
         <Form.Group className="mb-3">
           {" "}
-          {/* formların alt alta gelmesini sağlıyor */}
+          {/*Form.Group: formların alt alta gelmesini sağlıyor */}
           <Form.Control
             type="text"
             placeholder="1.Sayı"
             onChange={(e) => setNum1(e.target.value)} //onChange:form kontrollerini onChange üzerinden state'e bağlıyoruz
-            value={num1} //value:bu state'deki datayı form kontrole aktarmak için value'u kullandık
+            value={num1} //value:bu state'deki datayı form kontrole aktarmak için value'u kullandık(form'da value'yi gösteris ilk değeri 0 olduğu için formda ilk 0 görünüyor)
           />
         </Form.Group>
         <Form.Group className="mb-3">

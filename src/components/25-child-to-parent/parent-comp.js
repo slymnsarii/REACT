@@ -11,7 +11,8 @@ const ParentComp = () => {
   return (
     <div>
       <div>Counter: {counter}</div>
-      <ChildComp handleCounter={handleCounter} />
+      <ChildComp handleCounterP={handleCounter} />
+      {/* burdaki handleCounterP burdayken nesne child'da prop haline geliyor */}
     </div>
   );
 };

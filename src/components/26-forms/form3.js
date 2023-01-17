@@ -57,7 +57,7 @@ const Form3 = () => {
         <Form.Group>
           <Form.Label>Telefon</Form.Label>
           <Form.Control
-            type="text"
+            type="number"
             placeholder="Telefonunuzu giriniz"
             value={formData.phone}
             onChange={(e) =>

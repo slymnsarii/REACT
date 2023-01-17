@@ -12,8 +12,9 @@ const Form4 = () => {
   console.log(formData);
 
   const handleFormData = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target; //e.target; olay nerde olduğu bilgisni veriyor
     setFormData({ ...formData, [name]: value });
+    //[], değişken haline getiriyor name'i, koymazsak key olarak algılar ve obje içerisinde sanki bi name var gibi anlar
   };
 
   return (
@@ -26,7 +27,7 @@ const Form4 = () => {
             type="text"
             placeholder="Adınızı giriniz"
             value={formData.firstName}
-            onChange={(e) => handleFormData(e)}
+            onChange={(e) => handleFormData(e)} //event objesi olay olduğunda anında fonksiyona fırlatılan kısım
           />
         </Form.Group>
         <Form.Group className="mb-3">

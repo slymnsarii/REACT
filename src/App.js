@@ -1,3 +1,7 @@
+import { Col, Container, Row } from "react-bootstrap";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/00-home/header/header";
+import Menu from "./components/00-home/menu/menu";
 import HelloWorld from "./components/01-hello-world/hello-world";
 import HelloReact from "./components/02-hello-react/hello-react";
 import Jsx1 from "./components/03-jsx/jsx1";
@@ -41,6 +45,8 @@ import Form1 from "./components/26-forms/form1";
 import Form2 from "./components/26-forms/form2";
 import Form3 from "./components/26-forms/form3";
 import Form4 from "./components/26-forms/form4";
+import Form5 from "./components/26-forms/form5";
+import Form6 from "./components/26-forms/form6";
 import ProductList2 from "./components/replit/product-list2";
 
 //bir component'in import olması için import olacak dosyanın açık olması lazım, burda Jsx1 açık olmalı mesela
@@ -48,16 +54,30 @@ import ProductList2 from "./components/replit/product-list2";
 const App = () => {
   //return ile const App arasında bir şey tanımlanmaz
   return (
-    <div>
+    <BrowserRouter>
+      <Header />
+      <Container fluid>
+        <Row>
+          <Col sm={2}>
+            <Menu />
+          </Col>
+          <Col sm={10}>
+            <Routes>
+              <Route path="/hello-world" element={<HelloWorld />} />
+              <Route path="/hello-react" element={<HelloReact />} />
+              <Route path="/jsx1" element={<Jsx1 />} />
+              <Route path="/jsx2" element={<Jsx2 />} />
+              <Route path="/jsx3" element={<Jsx3 />} />
+              <Route path="/jsx4" element={<Jsx4 />} />
+              <Route path="/jsx4" element={<Jsx5 />} />
+            </Routes>
+          </Col>
+        </Row>
+      </Container>
+
       {/* JSX comment böyle yapılır ctrl+shift+A */}
 
-      {/* <HelloWorld/>
-      <HelloReact />
-      <Jsx1/>
-      <Jsx2/> 
-      <Jsx3/>
-      <Jsx4/>
-      <Jsx5/>
+      {/*
       <Jsx6/>
       <Jsx7 />
       <Style1/>
@@ -100,10 +120,11 @@ const App = () => {
       <Form1 />
       <Form2 />
       <Form3 />
-      */}
-
       <Form4 />
-    </div>
+      <Form5 />
+      <Form6 />
+      */}
+    </BrowserRouter>
   );
 };
 export default App; //component isimleri büyük harfle başlar, export yapmazsak componenti başka yerde kullanamayız

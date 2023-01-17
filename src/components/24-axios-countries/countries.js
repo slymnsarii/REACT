@@ -12,7 +12,7 @@ const Countries = () => {
         flag: item.flags.png,
         name: item.name.common,
         population: item.population,
-        capital: item.capital?.join("-"),
+        capital: item.capital?.join("-"), //?:eğer capital değeri yoksa hata vermesin diye
         currencies: item.currencies
           ? Object.keys(item.currencies)
               .map((cur) => item.currencies[cur].name)
