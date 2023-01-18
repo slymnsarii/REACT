@@ -15,7 +15,7 @@ const Form5 = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); //submit yapmasını engelliyor(Cannot POST /)
+    e.preventDefault(); //submit yapmasını engelliyor, HTML default özelliklerini iptal ediyor(Cannot POST /)
 
     try {
       if (!formData.firstName) throw new Error("Adınızı giriniz");
@@ -31,7 +31,7 @@ const Form5 = () => {
           email: "",
           phone: "",
         });
-      }, 1000);
+      }, 1000); //1 sn sonra obje içi sıfırlanıyor
     } catch (err) {
       console.error(err);
       alert(err.message);
