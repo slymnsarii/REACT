@@ -3,9 +3,9 @@ import StoreContext from "../../store";
 import "./topbar.scss";
 
 const Topbar = () => {
-  // herhangi bir yerden bu bilgilere ulasmak istiyorsam useContext StoreContex deyip ulasabiliyorum
-  const store = useContext(StoreContext); //Context'e ulaşmak için bu satır yeterli, counter ve setCounter kullanmayacağım sadece currencies lazım diye kullandık burayı, bunu dediğimiz anda app'deki value'leri alıyor burdaki 3 değeri store'a atıyor
-  const { currencies } = store; //aşağıda sürekli store.currencies yazmak yerine
+  // herhangi bir yerden bu bilgilere ulasmak istiyorsam merkezi state'de oluşturduğum useContext(StoreContex) deyip ulasabiliyorum
+  const store = useContext(StoreContext); //Context'e ulaşmak için bu satır yeterli, counter ve setCounter kullanmayacağım sadece currencies lazım diye kullandık burayı onlar lazım olsa burda onları da yazardım, bunu dediğimiz anda app'deki value'leri alıyor burdaki 3 değeri store'a atıyor
+  const { currencies } = store; //aşağıda sürekli store.currencies yazmak yerine(destructing)
 
   const formatCurrency = (val) => {
     return (1 / currencies[val]).toFixed(2);

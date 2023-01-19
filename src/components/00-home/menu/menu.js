@@ -18,7 +18,9 @@ const Menu = () => {
         {menu.map((mainItem) => (
           <li
             key={mainItem.title}
-            className={mainItem.children && "collapsable"}
+            className={
+              mainItem.children && "collapsable"
+            } /* mainItem'in çocuğu olan adı collapse olanlar */
           >
             {mainItem.children ? (
               <div onClick={handleCollapse}>{mainItem.title}</div>

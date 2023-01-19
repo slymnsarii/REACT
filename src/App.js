@@ -78,7 +78,9 @@ const App = () => {
   }, []);
 
   return (
-    //her yerde kullanacağımız dataları burada tanımlıyoruz, sonra contexe atıyoruz
+    //her yerde kullanacağımız dataları burada tanımlıyoruz, sonra contexe atıyoruz,
+    //bütün app'imizi sarmalayacak şekilde StoreContext.Provider içine alırız, StoreContext'i component haline getiren Provider burda
+    //value prop'u ile boş olan store'u doldurmuş oluyoruz:ben counter, setCounter, currencies'i paylaşmak istiyorum(store'u paylaşmış oluyorum)
     <StoreContext.Provider value={{ counter, setCounter, currencies }}>
       {" "}
       {/* böylece counter her yerden ulaşılır hale geldi, isim ve değeri ayni olacaksa 
